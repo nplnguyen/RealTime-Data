@@ -7,7 +7,8 @@
       "ingest": "node src/producer/ingestion.js",
       "processor": "node src/consumers/processor.js",
       "anomalies": "node src/consumers/anomalies.js",
-      "api": "node src/api/server.js"
+      "api": "node src/api/server.js",
+      "producer": "node src/producer/binance-producer.js"
     },
     "dependencies": {
       "dotenv": "^16.4.5",
