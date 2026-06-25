@@ -13,8 +13,8 @@ async function run() {
     }],
   });
 
-  console.log(`✅ Topic "${config.topics.rawTrades}" créé (ou déjà existant)`);
+  console.log(`Topic "${config.topics.rawTrades}" créé (ou déjà existant)`);
   await admin.disconnect();
 }
 
-run().catch((e) => { console.error('❌', e); process.exit(1); });
+run().catch((e) => { console.error('error', e); process.exit(1); });
