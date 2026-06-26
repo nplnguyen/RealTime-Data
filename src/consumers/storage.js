@@ -10,7 +10,7 @@ async function start() {
   await client.connect();
   const db = client.db('crypto');
   const trades = db.collection('trades');
-  console.log('✅ Connecté à MongoDB');
+  console.log('Connecté à MongoDB');
 
   await consumer.connect();
   await consumer.subscribe({ topic: 'crypto.trades.raw', fromBeginning: false });
